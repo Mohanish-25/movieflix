@@ -34,7 +34,7 @@ const Search = () => {
 
 // Separate effect to track search count only for successful searches
     useEffect(() => {
-        if (searchQuery.trim() && movies?.length > 0 && !moviesLoading) {
+        if (movies?.length > 0 && !moviesLoading) {
             updateSearchCount(searchQuery, movies[0]);
         }
     }, [movies]);
