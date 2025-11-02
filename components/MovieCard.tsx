@@ -3,7 +3,6 @@ import {Image, Text, TouchableOpacity, View} from "react-native";
 import {icons} from "@/constants/icons";
 
 const MovieCard = ({id, poster_path, title, vote_average, release_date}: Movie) => {
-    console.log(poster_path);
     return (
         <Link href={`/movies/${id}`} asChild>
             <TouchableOpacity className={"w-[30%]"} onPress={() => {
