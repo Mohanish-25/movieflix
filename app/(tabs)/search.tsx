@@ -6,6 +6,7 @@ import useFetch from "@/services/useFetch";
 import {fetchMovies} from "@/services/apis";
 import {icons} from "@/constants/icons";
 import SearchBar from "@/components/SearchBar";
+import {updateSearchCount} from "@/services/appwrite";
 
 const Search = () => {
 
@@ -29,8 +30,15 @@ const Search = () => {
             }
         }, 500);
         return () => clearTimeout(timeoutId);
-
     }, [searchQuery]);
+
+// Separate effect to track search count only for successful searches
+    useEffect(() => {
+        if (searchQuery.trim() && movies?.length > 0 && !moviesLoading) {
+            updateSearchCount(searchQuery, movies[0]);
+        }
+    }, [movies]);
+
     return (
         <View className={"flex-1 bg-primary"}>
             <Image source={images.bg} className={"flex-1 absolute w-full z-0 "} resizeMode="cover"/>
