@@ -8,6 +8,7 @@
     "scheme": "movies",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "backgroundColor": "#030014",
     "ios": {
       "supportsTablet": true
     },
