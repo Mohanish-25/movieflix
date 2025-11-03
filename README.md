@@ -1,50 +1,83 @@
-# Welcome to your Expo app 👋
+# MovieFlix
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern, cross-platform movie application built with React Native and Expo, featuring a beautiful UI powered by
+NativeWind (Tailwind CSS for React Native).
 
-## Get started
+## Features
 
-1. Install dependencies
+- 📱 Cross-platform support (iOS, Android, and Web)
+- 🎨 Modern UI with Tailwind CSS styling via NativeWind
+- 🔄 Smooth animations with React Native Reanimated
+- 🗺️ File-based routing with Expo Router
+- 🔐 Backend integration with Appwrite
+- 📊 Type-safe development with TypeScript
+- 🎭 Bottom tab navigation
+- 🖼️ Optimized image loading with Expo Image
 
+## Tech Stack
+
+- Frontend: React Native with Expo
+- Styling: NativeWind (Tailwind CSS for React Native)
+- Navigation: Expo Router
+- Language: TypeScript
+- Backend: Appwrite
+- API: The Movie Database (TMDB)
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn package manager
+- Expo CLI
+- iOS Simulator (for Mac users) or Android Emulator
+- TMDB API key
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Mohanish-25/movieflix.git
+   cd movieflix
+   ```
+
+2. **Install dependencies**
    ```bash
    npm install
    ```
 
-2. Start the app
+3. **Set up environment variables**
 
+   Create a `.env` file in the root directory and add the following configuration:
+
+   ```env
+   # TMDB API Configuration
+   EXPO_PUBLIC_MOVIE_API_KEY=your_tmdb_api_key_here
+   
+   # Appwrite Backend Configuration
+   EXPO_PUBLIC_APPWRITE_PROJECT_ID=your_appwrite_project_id
+   EXPO_PUBLIC_APPWRITE_DATABASE_ID=your_appwrite_database_id
+   EXPO_PUBLIC_APPWRITE_COLLECTION_ID=your_appwrite_collection_id
+   EXPO_PUBLIC_APPWRITE_PROJECT_NAME="MovieApp"
+   EXPO_PUBLIC_APPWRITE_ENDPOINT=https://fra.cloud.appwrite.io/v1
+
+4. **Start the development server**
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+## Project Structure
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
 ```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+movieflix/
+├── app/                  # Expo Router screens
+│   ├── (tabs)/           # Tab navigation screens
+│   └── movies/           # Dynamic movie routes
+│
+├── components/           # Reusable UI components
+├── services/             # API services and custom hooks
+├── constants/            # App-wide constants and exports
+├── interfaces/           # TypeScript type definitions
+├── assets/               # Static assets (fonts, icons, images)
+└── types/                # Additional type declarations
+```
