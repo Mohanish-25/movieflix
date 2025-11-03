@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "MovieFlix",
-    "slug": "movieflix",
+    "name": "MovieApp",
+    "slug": "MovieApp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/logo.png",
@@ -18,8 +18,7 @@
         "foregroundImage": "./assets/images/logo.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false,
-      "package": "com.mohanish_25.movieflix"
+      "predictiveBackGestureEnabled": false
     },
     "web": {
       "output": "static",
@@ -44,19 +43,6 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    },
-    "extra": {
-      "router": {},
-      "eas": {
-        "projectId": "2300c37e-574e-4669-a152-ce95bad71533"
-      }
-    },
-    "owner": "mohanish_25",
-    "runtimeVersion": {
-      "policy": "appVersion"
-    },
-    "updates": {
-      "url": "https://u.expo.dev/2300c37e-574e-4669-a152-ce95bad71533"
     }
   }
 }
