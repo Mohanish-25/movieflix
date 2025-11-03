@@ -68,16 +68,16 @@ NativeWind (Tailwind CSS for React Native).
 
 ## Project Structure
 
-```
-movieflix/
-├── app/                  # Expo Router screens
-│   ├── (tabs)/           # Tab navigation screens
-│   └── movies/           # Dynamic movie routes
-│
-├── components/           # Reusable UI components
-├── services/             # API services and custom hooks
-├── constants/            # App-wide constants and exports
-├── interfaces/           # TypeScript type definitions
-├── assets/               # Static assets (fonts, icons, images)
-└── types/                # Additional type declarations
-```
+   ```
+   movieflix/
+   ├── app/                  # Expo Router screens
+   │   ├── (tabs)/           # Tab navigation screens
+   │   └── movies/           # Dynamic movie routes
+   │
+   ├── components/           # Reusable UI components
+   ├── services/             # API services and custom hooks
+   ├── constants/            # App-wide constants and exports
+   ├── interfaces/           # TypeScript type definitions
+   ├── assets/               # Static assets (fonts, icons, images)
+   └── types/                # Additional type declarations
+   ```
